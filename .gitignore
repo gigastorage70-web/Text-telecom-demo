@@ -1,0 +1,5 @@
+extract_content.py
+extracted_data.txt
+generate_elementor_templates.py
+.DS_Store
+Thumbs.db

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Telecom &bull; 5 Modern Light-Theme Redesigns Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F7F5;
+      --panel: #FFFFFF;
+      --brand: #3ECB5F;
+      --brand-dark: #126328;
+      --text: #0B1210;
+      --text-muted: #53645B;
+      --border: #DCE7E0;
+      --shadow: 0 4px 20px rgba(11, 18, 16, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Top Control Hub */
+    .showcase-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      z-index: 50;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #062009;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .brand-title {
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .brand-subtitle {
+      font-size: 12px;
+      color: var(--brand-dark);
+      font-weight: 600;
+      background: #EEF8F1;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    /* Design Option Tabs */
+    .option-tabs {
+      display: flex;
+      background: var(--bg);
+      padding: 4px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      gap: 4px;
+    }
+    .opt-btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .opt-btn:hover { color: var(--text); }
+    .opt-btn.active {
+      background: #FFFFFF;
+      color: var(--text);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    /* Viewport / Responsive Switcher */
+    .viewport-controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg);
+      padding: 4px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .view-btn {
+      padding: 6px 10px;
+      border: none;
+      background: transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .view-btn.active {
+      background: #FFFFFF;
+      color: var(--text);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .action-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-action {
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-action-primary {
+      background: var(--brand);
+      color: #062009;
+    }
+    .btn-action-primary:hover {
+      background: #34b353;
+    }
+    .btn-action-outline {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-action-outline:hover {
+      border-color: var(--brand);
+    }
+
+    /* Main Preview Container */
+    .preview-stage {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      background: #EBF0EC;
+      overflow: hidden;
+    }
+    .iframe-wrapper {
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Device frame sizing */
+    .viewport-desktop { width: 100%; max-width: 100%; }
+    .viewport-tablet { width: 768px; max-width: 100%; }
+    .viewport-mobile { width: 390px; max-width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Controller Bar -->
+  <header class="showcase-header">
+    <div class="brand-area">
+      <div class="logo-badge">TT</div>
+      <div>
+        <div class="brand-title">Text-Telecom.com Redesign Showcase</div>
+        <span class="brand-subtitle">5 Light-Theme Options + Elementor JSON</span>
+      </div>
+    </div>
+
+    <!-- 5 Option Tabs -->
+    <div class="option-tabs">
+      <button class="opt-btn active" onclick="loadOption(1, this)">1. CPaaS Enterprise</button>
+      <button class="opt-btn" onclick="loadOption(2, this)">2. Global Carrier Hub</button>
+      <button class="opt-btn" onclick="loadOption(3, this)">3. Minimalist Tech</button>
+      <button class="opt-btn" onclick="loadOption(4, this)">4. Modern Bento</button>
+      <button class="opt-btn" onclick="loadOption(5, this)">5. Wholesale Portal</button>
+    </div>
+
+    <!-- Responsive Viewport Switcher -->
+    <div class="viewport-controls">
+      <button class="view-btn active" onclick="setViewport('desktop', this)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span>Desktop</span>
+      </button>
+      <button class="view-btn" onclick="setViewport('tablet', this)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span>Tablet</span>
+      </button>
+      <button class="view-btn" onclick="setViewport('mobile', this)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span>Mobile</span>
+      </button>
+    </div>
+
+    <!-- Direct Links -->
+    <div class="action-links">
+      <a id="openTabLink" href="preview-option-1.html" target="_blank" class="btn-action btn-action-outline">
+        <span>Open in New Tab</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+      <a id="elementorJsonLink" href="Text-Telecom-Option-1-CPaaS-Enterprise.json" download class="btn-action btn-action-primary">
+        <span>Download Elementor JSON</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Interactive Stage -->
+  <main class="preview-stage">
+    <div class="iframe-wrapper viewport-desktop" id="frameWrapper">
+      <iframe id="previewFrame" src="preview-option-1.html"></iframe>
+    </div>
+  </main>
+
+  <script>
+    const options = {
+      1: {
+        preview: 'preview-option-1.html',
+        json: 'Text-Telecom-Option-1-CPaaS-Enterprise.json',
+        title: 'Option 1: CPaaS Enterprise Platform'
+      },
+      2: {
+        preview: 'preview-option-2.html',
+        json: 'Text-Telecom-Option-2-Global-Carrier-Network.json',
+        title: 'Option 2: Global Carrier Network Hub'
+      },
+      3: {
+        preview: 'preview-option-3.html',
+        json: 'Text-Telecom-Option-3-Minimal-Precision-Tech.json',
+        title: 'Option 3: Minimalist Precision Tech'
+      },
+      4: {
+        preview: 'preview-option-4.html',
+        json: 'Text-Telecom-Option-4-Modern-Bento-Telecom.json',
+        title: 'Option 4: Modern Bento-Grid Telecom'
+      },
+      5: {
+        preview: 'preview-option-5.html',
+        json: 'Text-Telecom-Option-5-Wholesale-High-Conversion.json',
+        title: 'Option 5: Wholesale Carrier & Rate Portal'
+      }
+    };
+
+    function loadOption(num, btn) {
+      document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const opt = options[num];
+      document.getElementById('previewFrame').src = opt.preview;
+      document.getElementById('openTabLink').href = opt.preview;
+      document.getElementById('elementorJsonLink').href = opt.json;
+    }
+
+    function setViewport(type, btn) {
+      document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const wrapper = document.getElementById('frameWrapper');
+      wrapper.className = 'iframe-wrapper viewport-' + type;
+    }
+  </script>
+</body>
+</html>

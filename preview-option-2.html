@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Telecom | Global Carrier & Messaging Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #FFFFFF;
+      --bg-surface: #F5F8F6;
+      --bg-card: #FFFFFF;
+      --brand-green: #3ECB5F;
+      --brand-green-hover: #2db34e;
+      --brand-green-tint: rgba(62, 203, 95, 0.12);
+      --brand-green-glow: rgba(62, 203, 95, 0.35);
+      --text-main: #0B1210;
+      --text-muted: #526359;
+      --text-sub: #84968C;
+      --border-main: #E2ECE5;
+      --border-subtle: #EDF4F0;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-soft: 0 4px 20px rgba(11, 18, 16, 0.05);
+      --shadow-lift: 0 12px 36px rgba(11, 18, 16, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .topbar {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 10px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .status-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #14692c;
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--brand-green);
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px var(--brand-green-glow);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.9; }
+      50% { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.9; }
+    }
+
+    /* Header Nav */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-main);
+      z-index: 100;
+      padding: 18px 0;
+    }
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .brand-symbol {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--brand-green);
+      color: #062009;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px var(--brand-green-glow);
+    }
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 14.5px;
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover {
+      color: var(--brand-green-hover);
+    }
+    .nav-cta-btn {
+      background: var(--brand-green);
+      color: #062009;
+      padding: 11px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(62, 203, 95, 0.25);
+    }
+    .nav-cta-btn:hover {
+      background: var(--brand-green-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(62, 203, 95, 0.4);
+    }
+
+    /* Hero Section with Interactive Route Hub */
+    .hero-sec {
+      padding: 60px 0 80px;
+      background: radial-gradient(circle at 50% 0%, rgba(62, 203, 95, 0.09) 0%, rgba(255, 255, 255, 0) 65%);
+      position: relative;
+    }
+    .hero-top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+    .hero-headline {
+      font-size: 58px;
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--text-main);
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+    .hero-headline span.accent-green {
+      color: var(--brand-green);
+      background: linear-gradient(120deg, #1b8a36, #3ECB5F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 19px;
+      color: var(--text-muted);
+      max-width: 720px;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    .btn-lg {
+      padding: 14px 30px;
+      border-radius: var(--radius-full);
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .btn-outline {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      color: var(--text-main);
+      box-shadow: var(--shadow-soft);
+    }
+    .btn-outline:hover {
+      border-color: var(--brand-green);
+      background: var(--bg-surface);
+    }
+
+    /* Light Theme Carrier Map Frame */
+    .carrier-map-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lift);
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .map-card-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .map-title {
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .map-stats-ticker {
+      display: flex;
+      gap: 20px;
+      font-size: 12.5px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .ticker-val {
+      color: #126b2b;
+      font-weight: 700;
+    }
+
+    /* Map SVG Container */
+    .map-viewport {
+      position: relative;
+      height: 380px;
+      background: #FAFCFA;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .map-svg {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    .route-path {
+      stroke: #CCE8D4;
+      stroke-width: 1.5;
+      stroke-dasharray: 4 4;
+      fill: none;
+      transition: stroke 0.3s, stroke-width 0.3s;
+    }
+    .route-path.active {
+      stroke: #3ECB5F;
+      stroke-width: 2.5;
+      stroke-dasharray: none;
+    }
+    .map-node {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .map-node circle.outer {
+      fill: rgba(62, 203, 95, 0.18);
+      transition: r 0.2s;
+    }
+    .map-node circle.inner {
+      fill: #156c2d;
+    }
+    .map-node:hover circle.outer {
+      fill: rgba(62, 203, 95, 0.4);
+      r: 14;
+    }
+    .map-node text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      fill: var(--text-main);
+    }
+    .hub-tooltip {
+      position: absolute;
+      background: #0B1210;
+      color: #FFFFFF;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 12px;
+      pointer-events: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 50;
+      transform: translate(-50%, -120%);
+    }
+    .hub-tooltip-city {
+      font-weight: 700;
+      font-size: 13.5px;
+      color: #5FE07A;
+    }
+
+    /* 4 Primary Stats */
+    .stats-strip {
+      padding: 50px 0;
+      border-top: 1px solid var(--border-main);
+      border-bottom: 1px solid var(--border-main);
+      background: var(--bg-surface);
+    }
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .strip-item {
+      text-align: center;
+      background: #FFFFFF;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-main);
+      box-shadow: var(--shadow-soft);
+    }
+    .strip-number {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .strip-number span {
+      color: var(--brand-green);
+    }
+    .strip-caption {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Services Detailed */
+    .sec-wrap {
+      padding: 100px 0;
+    }
+    .sec-badge {
+      display: inline-block;
+      background: var(--brand-green-tint);
+      color: #126328;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .sec-head {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .sec-desc {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 60px;
+    }
+
+    .carrier-services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .carrier-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .carrier-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lift);
+      border-color: var(--brand-green);
+    }
+    .carrier-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--brand-green);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .carrier-card:hover::before {
+      opacity: 1;
+    }
+    .carrier-card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--brand-green-tint);
+      color: #14692c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .carrier-card-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: #126328;
+      margin-bottom: 8px;
+    }
+    .carrier-card-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .carrier-card-p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .carrier-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .carrier-pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-main);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Regional Routes Table */
+    .routes-explorer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-main);
+      border-bottom: 1px solid var(--border-main);
+    }
+    .route-table-container {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    .route-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border-main);
+      background: #FAFCFA;
+    }
+    .route-tab {
+      padding: 16px 24px;
+      border: none;
+      background: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .route-tab.active {
+      color: var(--text-main);
+      border-bottom-color: var(--brand-green);
+      background: #FFFFFF;
+    }
+    .route-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .route-table th {
+      padding: 16px 24px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      background: #FAFCFA;
+      border-bottom: 1px solid var(--border-main);
+    }
+    .route-table td {
+      padding: 16px 24px;
+      font-size: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .latency-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 12.5px;
+      color: #126328;
+      background: var(--brand-green-tint);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* Core Values 5 Pillars */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .pillar-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      padding: 30px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-soft);
+    }
+    .pillar-box-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--brand-green-tint);
+      color: #14692c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .pillar-box h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .pillar-box p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Dubai HQ & Form */
+    .carrier-contact-sec {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-main);
+    }
+    .contact-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .hq-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-main);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-soft);
+    }
+    .hq-info-block {
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .hq-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #14692c;
+      margin-bottom: 6px;
+    }
+    .hq-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .hq-text a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .hq-text a:hover {
+      color: var(--brand-green-hover);
+    }
+
+    /* Footer */
+    .telecom-footer {
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-main);
+      padding: 60px 0 30px;
+    }
+    .footer-flex {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-col h5 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+    .footer-col a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover {
+      color: var(--brand-green-hover);
+    }
+
+    @media (max-width: 1024px) {
+      .hero-headline { font-size: 42px; }
+      .carrier-services-grid, .contact-split { grid-template-columns: 1fr; }
+      .strip-grid, .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-flex { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .hero-headline { font-size: 32px; }
+      .strip-grid, .pillars-grid { grid-template-columns: 1fr; }
+      .footer-flex { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="status-live">
+        <span class="live-dot"></span>
+        <span>CARRIER NETWORK ACTIVE &bull; 190+ COUNTRIES</span>
+      </div>
+      <div style="font-size: 12.5px;">
+        NOC Desk: <strong>24/7 Monitored</strong> &bull; Dubai HQ: Meydan Hotel
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <a href="#top" class="brand-logo">
+        <div class="brand-symbol">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <span>Text Telecom</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#routes">Carrier Routes</a></li>
+        <li><a href="#services">Messaging Services</a></li>
+        <li><a href="#pillars">Carrier Pillars</a></li>
+        <li><a href="#about">About HQ</a></li>
+        <li><a href="#contact">Contact NOC</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta-btn">Connect Direct Route</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-sec" id="top">
+    <div class="container">
+      <div class="hero-top-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#156c2d" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Direct Tier-1 SS7 & SMPP Telecom Infrastructure</span>
+      </div>
+      <h1 class="hero-headline">
+        Carrier-Grade SMS & Wholesale Routing Across <span class="accent-green">190+ Global Hubs.</span>
+      </h1>
+      <p class="hero-sub">
+        Moving one-time passcodes, financial alerts, and wholesale enterprise traffic directly through global mobile network operators — ensuring maximum deliverability without dropped messages.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="nav-cta-btn btn-lg">
+          <span>Request Route Interconnect</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#routes" class="btn-outline btn-lg">Explore Route Latency</a>
+      </div>
+
+      <!-- Interactive Global Carrier Route Map (Light Theme) -->
+      <div class="carrier-map-card" id="routes">
+        <div class="map-card-bar">
+          <div class="map-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#156c2d" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Interactive Carrier Interconnect Map</span>
+          </div>
+          <div class="map-stats-ticker">
+            <div>Global Live Throughput: <span class="ticker-val" id="liveTicker">12,650</span> msg/sec</div>
+            <div>Average Delivery: <span class="ticker-val">&lt; 1.8s</span></div>
+            <div>SLA: <span class="ticker-val">99.99%</span></div>
+          </div>
+        </div>
+
+        <div class="map-viewport">
+          <svg class="map-svg" viewBox="0 0 900 400" id="networkSvg">
+            <!-- Background continent hints (abstract light curves) -->
+            <path d="M150,120 Q220,100 280,140 Q320,200 260,260 Q180,240 150,180 Z" fill="#EEF5F0" opacity="0.6"/>
+            <path d="M420,100 Q480,80 540,110 Q560,180 500,220 Q440,200 420,150 Z" fill="#EEF5F0" opacity="0.6"/>
+            <path d="M520,150 Q600,140 680,180 Q700,260 620,280 Q540,240 520,180 Z" fill="#EEF5F0" opacity="0.6"/>
+
+            <!-- Route lines connecting from Dubai (HQ: 550, 180) -->
+            <path id="route-lon" class="route-path" d="M550,180 Q480,120 440,110"/>
+            <path id="route-fra" class="route-path" d="M550,180 Q510,130 470,125"/>
+            <path id="route-sin" class="route-path" d="M550,180 Q640,220 710,230"/>
+            <path id="route-nyc" class="route-path" d="M550,180 Q350,100 230,130"/>
+            <path id="route-jnb" class="route-path" d="M550,180 Q540,260 520,310"/>
+            <path id="route-sao" class="route-path" d="M550,180 Q340,260 280,290"/>
+
+            <!-- Hub Nodes -->
+            <!-- Dubai (Primary Carrier Hub) -->
+            <g class="map-node" onmouseenter="showHub(event, 'Dubai HQ Hub', 'Primary Carrier Exchange &bull; 99.99% SLA &bull; 12,500+ TPS', 'route-all')" onmouseleave="hideHub()">
+              <circle cx="550" cy="180" r="14" class="outer"/>
+              <circle cx="550" cy="180" r="6" class="inner"/>
+              <text x="566" y="184">Dubai (HQ Hub)</text>
+            </g>
+
+            <!-- London -->
+            <g class="map-node" onmouseenter="showHub(event, 'London Exchange', 'Direct Tier-1 Interconnect &bull; Latency: 22ms', 'route-lon')" onmouseleave="hideHub()">
+              <circle cx="440" cy="110" r="10" class="outer"/>
+              <circle cx="440" cy="110" r="4.5" class="inner"/>
+              <text x="400" y="98">London</text>
+            </g>
+
+            <!-- Frankfurt -->
+            <g class="map-node" onmouseenter="showHub(event, 'Frankfurt Exchange', 'Direct DE-CIX Interconnect &bull; Latency: 19ms', 'route-fra')" onmouseleave="hideHub()">
+              <circle cx="470" cy="125" r="10" class="outer"/>
+              <circle cx="470" cy="125" r="4.5" class="inner"/>
+              <text x="478" y="122">Frankfurt</text>
+            </g>
+
+            <!-- Singapore -->
+            <g class="map-node" onmouseenter="showHub(event, 'Singapore Hub', 'APAC Primary Gateway &bull; Latency: 28ms', 'route-sin')" onmouseleave="hideHub()">
+              <circle cx="710" cy="230" r="10" class="outer"/>
+              <circle cx="710" cy="230" r="4.5" class="inner"/>
+              <text x="724" y="234">Singapore</text>
+            </g>
+
+            <!-- New York -->
+            <g class="map-node" onmouseenter="showHub(event, 'New York Hub', 'North America Gateway &bull; Latency: 38ms', 'route-nyc')" onmouseleave="hideHub()">
+              <circle cx="230" cy="130" r="10" class="outer"/>
+              <circle cx="230" cy="130" r="4.5" class="inner"/>
+              <text x="170" y="125">New York</text>
+            </g>
+
+            <!-- Johannesburg -->
+            <g class="map-node" onmouseenter="showHub(event, 'Johannesburg Gateway', 'Africa Direct SS7 Route &bull; Latency: 34ms', 'route-jnb')" onmouseleave="hideHub()">
+              <circle cx="520" cy="310" r="10" class="outer"/>
+              <circle cx="520" cy="310" r="4.5" class="inner"/>
+              <text x="532" y="315">Johannesburg</text>
+            </g>
+
+            <!-- Sao Paulo -->
+            <g class="map-node" onmouseenter="showHub(event, 'Sao Paulo Gateway', 'LATAM Carrier Interconnect &bull; Latency: 44ms', 'route-sao')" onmouseleave="hideHub()">
+              <circle cx="280" cy="290" r="10" class="outer"/>
+              <circle cx="280" cy="290" r="4.5" class="inner"/>
+              <text x="294" y="295">Sao Paulo</text>
+            </g>
+          </svg>
+
+          <!-- Floating Tooltip -->
+          <div id="hubTooltip" class="hub-tooltip">
+            <div class="hub-tooltip-city" id="hubCity">City</div>
+            <div id="hubMeta" style="font-size: 11px; margin-top: 2px;">Meta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Stats Strip -->
+  <section class="stats-strip">
+    <div class="container strip-grid">
+      <div class="strip-item">
+        <div class="strip-number">190<span>+</span></div>
+        <div class="strip-caption">Countries Connected</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-number">99.99<span>%</span></div>
+        <div class="strip-caption">Network Uptime SLA</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-number">12,500<span>+</span></div>
+        <div class="strip-caption">Messages Routed / Sec</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-number">24<span>/</span>7</div>
+        <div class="strip-caption">Engineering NOC Desk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Carrier Services -->
+  <section class="sec-wrap" id="services">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 60px;">
+        <span class="sec-badge">Telecom Infrastructure</span>
+        <h2 class="sec-head">Direct Operator Routes & Scalable Messaging Solutions.</h2>
+        <p class="sec-desc">Precision routing engineered to meet strict regulatory deliverability requirements and extreme throughput demands.</p>
+      </div>
+
+      <div class="carrier-services-grid">
+        <!-- Card 1 -->
+        <div class="carrier-card">
+          <div class="carrier-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="carrier-card-tag">01 &bull; MISSION CRITICAL</div>
+          <h3 class="carrier-card-title">A2P SMS Messaging</h3>
+          <p class="carrier-card-p">Engineered for instantaneous delivery of high-security authentication codes, one-time passcodes, bank transactional notifications, and critical alerts at verified operator deliverability rates.</p>
+          <div class="carrier-pill-row">
+            <span class="carrier-pill">OTP Passcodes</span>
+            <span class="carrier-pill">Bank Alerts</span>
+            <span class="carrier-pill">Sub-2s Latency</span>
+            <span class="carrier-pill">DLR Receipts</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="carrier-card">
+          <div class="carrier-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="carrier-card-tag">02 &bull; HIGH CAPACITY</div>
+          <h3 class="carrier-card-title">Wholesale SMS Solutions</h3>
+          <p class="carrier-card-p">Direct operator interconnects and premium wholesale routing designed specifically for telcos, mobile aggregators, and OTT platforms moving millions of messages daily without margin erosion.</p>
+          <div class="carrier-pill-row">
+            <span class="carrier-pill">Direct Tier-1</span>
+            <span class="carrier-pill">Dynamic LCR</span>
+            <span class="carrier-pill">Dedicated Capacity</span>
+            <span class="carrier-pill">Competitive Rates</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="carrier-card">
+          <div class="carrier-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="carrier-card-tag">03 &bull; PROTOCOLS & INTEGRATION</div>
+          <h3 class="carrier-card-title">Technical Integration & Binds</h3>
+          <p class="carrier-card-p">Seamless interconnects via SMPP 3.4 binds, JSON REST APIs, and Webhook web-services with full TLS 1.3 encryption, geo-redundancy, and live network telemetry.</p>
+          <div class="carrier-pill-row">
+            <span class="carrier-pill">SMPP 3.4 Binds</span>
+            <span class="carrier-pill">RESTful API</span>
+            <span class="carrier-pill">TLS 1.3 Secured</span>
+            <span class="carrier-pill">24/7 Tech NOC</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="carrier-card">
+          <div class="carrier-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="carrier-card-tag">04 &bull; ENTERPRISE BROADCAST</div>
+          <h3 class="carrier-card-title">Enterprise Messaging Suite</h3>
+          <p class="carrier-card-p">Manage large-scale customer campaigns, schedule recurring broadcasts, track detailed delivery logs, and optimize route engagement from one unified platform.</p>
+          <div class="carrier-pill-row">
+            <span class="carrier-pill">Bulk Campaigns</span>
+            <span class="carrier-pill">Real-time Analytics</span>
+            <span class="carrier-pill">Automated Retry</span>
+            <span class="carrier-pill">Sender ID Control</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Routes Explorer -->
+  <section class="sec-wrap routes-explorer">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        <span class="sec-badge">Global Carrier Matrix</span>
+        <h2 class="sec-head">Live Regional Interconnect Status.</h2>
+        <p class="sec-desc">Direct route verification and average latency benchmarks across primary telecom corridors.</p>
+      </div>
+
+      <div class="route-table-container">
+        <div class="route-tabs">
+          <button class="route-tab active">Middle East & GCC</button>
+          <button class="route-tab">Europe & UK</button>
+          <button class="route-tab">Asia Pacific</button>
+          <button class="route-tab">Americas & LATAM</button>
+        </div>
+        <table class="route-table">
+          <thead>
+            <tr>
+              <th>Country / Destination</th>
+              <th>Operator Connection</th>
+              <th>Route Type</th>
+              <th>Latency Benchmark</th>
+              <th>SLA Delivery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>United Arab Emirates (UAE)</strong></td>
+              <td>Direct Tier-1 Telco Binds</td>
+              <td><span class="carrier-pill">Direct SS7</span></td>
+              <td><span class="latency-tag">12 ms</span></td>
+              <td><strong>99.99%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Saudi Arabia (KSA)</strong></td>
+              <td>Direct Operator Interconnect</td>
+              <td><span class="carrier-pill">Direct SMPP</span></td>
+              <td><span class="latency-tag">18 ms</span></td>
+              <td><strong>99.98%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>United Kingdom (UK)</strong></td>
+              <td>Tier-1 MNO Direct</td>
+              <td><span class="carrier-pill">Direct SS7</span></td>
+              <td><span class="latency-tag">22 ms</span></td>
+              <td><strong>99.99%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Germany (DE)</strong></td>
+              <td>DE-CIX Frankfurt Gateway</td>
+              <td><span class="carrier-pill">Direct Tier-1</span></td>
+              <td><span class="latency-tag">19 ms</span></td>
+              <td><strong>99.99%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Singapore & Malaysia</strong></td>
+              <td>Equinix SG1 Direct Bind</td>
+              <td><span class="carrier-pill">Direct SMPP</span></td>
+              <td><span class="latency-tag">28 ms</span></td>
+              <td><strong>99.97%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Core Carrier Pillars -->
+  <section class="sec-wrap" id="pillars">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+        <span class="sec-badge">Operational Commitments</span>
+        <h2 class="sec-head">Built on carrier relationships, not just software.</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-box">
+          <div class="pillar-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4>Reliability</h4>
+          <p>A 99.99% uptime SLA with geo-redundant node architecture across Asia, Europe, and GCC.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div class="pillar-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Transparency</h4>
+          <p>Unmanipulated carrier DLR receipts, clear per-destination pricing, and real-time route health telemetry.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div class="pillar-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4>Innovation</h4>
+          <p>Continuous investment into SMPP protocol acceleration, automated route failovers, and AI traffic balancing.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div class="pillar-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Customer Success</h4>
+          <p>Dedicated telecommunications account managers assigned to assist with route onboarding and custom volume pricing.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div class="pillar-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>Operational Security</h4>
+          <p>End-to-end TLS encryption, strict anti-smishing firewalls, and licensed carrier compliance.</p>
+        </div>
+
+        <div class="pillar-box" style="background: var(--brand-green-tint); border-color: var(--brand-green);">
+          <div class="pillar-box-icon" style="background: #FFFFFF;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#156c2d" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4>Global Scale</h4>
+          <p>190+ countries with strategic wholesale capacity, direct carrier contracts, and multi-channel redundancy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dubai HQ & Interconnect Form -->
+  <section class="sec-wrap carrier-contact-sec" id="contact">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+        <span class="sec-badge">Direct Carrier Interconnect</span>
+        <h2 class="sec-head">Connect with our Dubai Telecommunications NOC.</h2>
+        <p class="sec-desc">Get direct pricing, request SMPP test binds, or discuss custom wholesale capacity.</p>
+      </div>
+
+      <div class="contact-split">
+        <div class="hq-card">
+          <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px;">Licensed Carrier Headquarters</h3>
+          
+          <div class="hq-info-block">
+            <div class="hq-label">Office Location</div>
+            <div class="hq-text">Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, United Arab Emirates.</div>
+          </div>
+
+          <div class="hq-info-block">
+            <div class="hq-label">Direct Carrier Inquiries</div>
+            <div class="hq-text">
+              <a href="mailto:lc@text-telecom.com">lc@text-telecom.com</a> &bull; 
+              <a href="mailto:mm@text-telecom.com">mm@text-telecom.com</a>
+            </div>
+          </div>
+
+          <div class="hq-info-block" style="border-bottom: none; margin-bottom: 0;">
+            <div class="hq-label">Technical NOC Support</div>
+            <div class="hq-text">Available 24/7/365 &bull; Response within 1 Business Hour for Interconnect Partners.</div>
+          </div>
+        </div>
+
+        <div class="hq-card">
+          <form onsubmit="handleContact(event)">
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Your Name</label>
+              <input type="text" required placeholder="Full Name" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-main); border-radius: var(--radius-sm); font-size: 14px;">
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Work Email</label>
+              <input type="email" required placeholder="name@company.com" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-main); border-radius: var(--radius-sm); font-size: 14px;">
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Route Destination & Estimated Volume</label>
+              <textarea rows="3" required placeholder="e.g., UAE, UK, KSA — 1.5M SMS/month — SMPP connection required" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-main); border-radius: var(--radius-sm); font-size: 14px; resize: none;"></textarea>
+            </div>
+
+            <button type="submit" class="nav-cta-btn" style="width: 100%; padding: 14px; border: none; cursor: pointer; font-size: 15px;">
+              Submit Interconnect Request
+            </button>
+            <div id="contactAck" style="display: none; margin-top: 12px; padding: 10px; background: var(--brand-green-tint); color: #126328; font-weight: 600; font-size: 13px; text-align: center; border-radius: 6px;">
+              Request received. A carrier engineer will contact you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="telecom-footer">
+    <div class="container">
+      <div class="footer-flex">
+        <div>
+          <a href="#top" class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-symbol">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <span>Text Telecom</span>
+          </a>
+          <p style="font-size: 14px; color: var(--text-muted); max-width: 320px; line-height: 1.6;">
+            Global telecommunications carrier delivering enterprise A2P, wholesale SMS, and carrier interconnects across 190+ countries.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">A2P SMS Messaging</a></li>
+            <li><a href="#services">Wholesale Direct</a></li>
+            <li><a href="#services">SMPP 3.4 Binds</a></li>
+            <li><a href="#services">Enterprise Console</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Infrastructure</h5>
+          <ul>
+            <li><a href="#routes">190+ Global Hubs</a></li>
+            <li><a href="#pillars">Operational SLA</a></li>
+            <li><a href="#contact">Dubai Meydan HQ</a></li>
+            <li><a href="#contact">24/7 NOC Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Follow Carrier</h5>
+          <ul>
+            <li><a href="https://ae.linkedin.com/company/text-telecom" target="_blank" rel="noopener">LinkedIn Profile &rarr;</a></li>
+            <li><a href="mailto:lc@text-telecom.com">Direct Email &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; justify-content: space-between; font-size: 13px; color: var(--text-sub);">
+        <div>Copyright &copy; 2026 <strong>Text Telecom&reg;</strong>. All rights reserved.</div>
+        <div>Licensed Carrier &bull; The Meydan Hotel, Dubai, U.A.E.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function showHub(e, city, meta, routeId) {
+      const tooltip = document.getElementById('hubTooltip');
+      const cityEl = document.getElementById('hubCity');
+      const metaEl = document.getElementById('hubMeta');
+      cityEl.innerHTML = city;
+      metaEl.innerHTML = meta;
+      
+      const rect = document.getElementById('networkSvg').getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      tooltip.style.left = x + 'px';
+      tooltip.style.top = y + 'px';
+      tooltip.style.display = 'block';
+
+      document.querySelectorAll('.route-path').forEach(r => r.classList.remove('active'));
+      if(routeId === 'route-all') {
+        document.querySelectorAll('.route-path').forEach(r => r.classList.add('active'));
+      } else {
+        const targetRoute = document.getElementById(routeId);
+        if(targetRoute) targetRoute.classList.add('active');
+      }
+    }
+
+    function hideHub() {
+      document.getElementById('hubTooltip').style.display = 'none';
+      document.querySelectorAll('.route-path').forEach(r => r.classList.remove('active'));
+    }
+
+    // Live Ticker simulation
+    let baseRate = 12650;
+    setInterval(() => {
+      baseRate += Math.floor((Math.random() - 0.48) * 140);
+      document.getElementById('liveTicker').textContent = baseRate.toLocaleString();
+    }, 1200);
+
+    function handleContact(e) {
+      e.preventDefault();
+      document.getElementById('contactAck').style.display = 'block';
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Interconnect Request Dispatched ✓';
+      btn.style.background = '#156c2d';
+      btn.style.color = '#FFFFFF';
+    }
+  </script>
+</body>
+</html>
