@@ -964,7 +964,7 @@
       ]
     },
     {
-      "id": "9f09b46a",
+      "id": "08c8ce71",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -994,7 +994,7 @@
       },
       "elements": [
         {
-          "id": "3df8aa00",
+          "id": "b1ecaf55",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1020,7 +1020,7 @@
           },
           "elements": [
             {
-              "id": "ee010ede",
+              "id": "76901b36",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1031,24 +1031,24 @@
                   "unit": "px",
                   "top": "0",
                   "right": "0",
-                  "bottom": "44",
+                  "bottom": "48",
                   "left": "0",
                   "isLinked": false
                 }
               },
               "elements": [
                 {
-                  "id": "ffa9ae55",
+                  "id": "bbd5ebfb",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
                   "settings": {
-                    "editor": "<p style=\"margin:0; font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:700; color:#14692c; letter-spacing:0.08em; text-transform:uppercase;\">01 / CORE MESSAGING INFRASTRUCTURE</p>",
+                    "editor": "<p style=\"margin:0; font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:700; color:#14692c; letter-spacing:0.08em; text-transform:uppercase;\">OUR MESSAGING SERVICES</p>",
                     "margin": {
                       "unit": "px",
                       "top": "0",
                       "right": "0",
-                      "bottom": "8",
+                      "bottom": "10",
                       "left": "0",
                       "isLinked": false
                     }
@@ -1056,7 +1056,7 @@
                   "elements": []
                 },
                 {
-                  "id": "943d1af4",
+                  "id": "3ab5c6dd",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1076,7 +1076,7 @@
                       "unit": "px",
                       "top": "0",
                       "right": "0",
-                      "bottom": "12",
+                      "bottom": "14",
                       "left": "0",
                       "isLinked": false
                     }
@@ -1084,7 +1084,7 @@
                   "elements": []
                 },
                 {
-                  "id": "6136169e",
+                  "id": "571d3dcb",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1096,7 +1096,7 @@
               ]
             },
             {
-              "id": "774831b2",
+              "id": "303a0088",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1116,7 +1116,7 @@
               },
               "elements": [
                 {
-                  "id": "3aa84fdd",
+                  "id": "305bc857",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1138,19 +1138,19 @@
                   },
                   "elements": [
                     {
-                      "id": "3b8d7192",
+                      "id": "c2dc50b4",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">01 / A2P CORE</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">A2P Enterprise Messaging</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">High-deliverability application-to-person SMS for mission-critical notifications, bank alerts, and real-time OTPs with direct carrier routing.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Tier-1 Direct</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Real-time DLR</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Global Reach</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path><line x1=\"8\" y1=\"9\" x2=\"16\" y2=\"9\"></line><line x1=\"8\" y1=\"13\" x2=\"13\" y2=\"13\"></line></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">A2P Enterprise Messaging</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">High-deliverability application-to-person SMS for mission-critical notifications, bank alerts, and real-time OTPs with direct carrier routing.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Tier-1 Direct</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Real-time DLR</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Global Reach</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
                   ]
                 },
                 {
-                  "id": "90d853f4",
+                  "id": "8b398574",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1172,19 +1172,19 @@
                   },
                   "elements": [
                     {
-                      "id": "8a525d93",
+                      "id": "251d08f2",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">02 / DIRECT BINDS</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">Direct Carrier Routes</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">Direct SS7 and SMPP interconnects with mobile network operators across Asia, Europe, Middle East, and Africa for pristine deliverability.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Direct Interconnect</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">No Gray Routes</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">SLA Backed</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"5\" r=\"3\"></circle><circle cx=\"6\" cy=\"12\" r=\"3\"></circle><circle cx=\"18\" cy=\"19\" r=\"3\"></circle><line x1=\"8.59\" y1=\"13.51\" x2=\"15.42\" y2=\"17.49\"></line><line x1=\"15.41\" y1=\"6.51\" x2=\"8.59\" y2=\"10.49\"></line></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">Direct Carrier Routes</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">Direct SS7 and SMPP interconnects with mobile network operators across Asia, Europe, Middle East, and Africa for pristine deliverability.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Direct Interconnect</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">No Gray Routes</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">SLA Backed</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
                   ]
                 },
                 {
-                  "id": "9e644194",
+                  "id": "d975d11c",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1206,19 +1206,19 @@
                   },
                   "elements": [
                     {
-                      "id": "932633d0",
+                      "id": "4ee8f7c4",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">03 / SECURITY & OTP</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">OTP & 2FA Deliverability</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">Sub-second routing engineered specifically for time-sensitive one-time passcodes and multi-factor authentication with adaptive fallback.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Sub-Second Delivery</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Priority Queue</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Adaptive Retry</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path><polyline points=\"9 12 11 14 15 10\"></polyline></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">OTP & 2FA Deliverability</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">Sub-second routing engineered specifically for time-sensitive one-time passcodes and multi-factor authentication with adaptive fallback.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Sub-Second Delivery</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Priority Queue</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Adaptive Retry</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
                   ]
                 },
                 {
-                  "id": "88e84d11",
+                  "id": "2db78a85",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1240,19 +1240,19 @@
                   },
                   "elements": [
                     {
-                      "id": "ea4948e8",
+                      "id": "247ea9e4",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">04 / WHOLESALE HUB</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">Wholesale Carrier Hub</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">High-volume wholesale SMS termination with competitive tiered pricing, least cost routing (LCR), and dedicated high-TPS capacity.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">High TPS Capacity</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">LCR Routing</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Wholesale Pricing</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"21\" r=\"1\"></circle><circle cx=\"20\" cy=\"21\" r=\"1\"></circle><path d=\"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\"></path></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">Wholesale Carrier Hub</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">High-volume wholesale SMS termination with competitive tiered pricing, least cost routing (LCR), and dedicated high-TPS capacity.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">High TPS Capacity</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">LCR Routing</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Wholesale Pricing</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
                   ]
                 },
                 {
-                  "id": "79d9e682",
+                  "id": "3d6b95db",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1274,19 +1274,19 @@
                   },
                   "elements": [
                     {
-                      "id": "80960fae",
+                      "id": "f2fe524e",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">05 / GLOBAL COVERAGE</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">Global Operator Reach</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">Extensive network coverage connecting to 800+ mobile network operators in over 190 countries globally with localized sender ID compliance.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">190+ Countries</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">800+ MNOs</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Global SS7</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">Global Operator Reach</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">Extensive network coverage connecting to 800+ mobile network operators in over 190 countries globally with localized sender ID compliance.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">190+ Countries</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">800+ MNOs</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Global SS7</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
                   ]
                 },
                 {
-                  "id": "5290f2e6",
+                  "id": "094f17e0",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -1308,12 +1308,12 @@
                   },
                   "elements": [
                     {
-                      "id": "849833e4",
+                      "id": "2c153144",
                       "elType": "widget",
                       "isInner": false,
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:14px; padding:28px 24px; font-family:'Plus Jakarta Sans', sans-serif; height:100%; box-sizing:border-box; display:flex; flex-direction:column;\">\n  <div style=\"font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700; color:#14692c; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;\">06 / 24/7 CARRIER NOC</div>\n  <h4 style=\"margin:0 0 10px 0; font-size:19px; font-weight:700; color:#0B1210;\">24/7 Monitored Carrier NOC</h4>\n  <p style=\"margin:0 0 18px 0; font-size:14px; line-height:1.6; color:#53645B; font-family:'Inter', sans-serif;\">Round-the-clock proactive monitoring by experienced telecom routing engineers ensuring 99.99% platform availability and instant route recovery.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto;\"><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">24/7/365 NOC</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Proactive Alerts</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:3px 9px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Direct Engineers</span></div>\n</div>"
+                        "editor": "<div style=\"background:#FFFFFF; border:1px solid #E2ECE5; border-radius:16px; padding:32px 28px; box-shadow:0 4px 20px rgba(11,18,16,0.03); font-family:'Plus Jakarta Sans', sans-serif; display:flex; flex-direction:column; height:100%; box-sizing:border-box; transition:all 0.25s ease;\">\n  <div style=\"width:48px; height:48px; border-radius:12px; background:#EBF9EF; border:1px solid #C6EACF; color:#14692c; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;\">\n    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#14692c\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 18v-6a9 9 0 0 1 18 0v6\"></path><path d=\"M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z\"></path></svg>\n  </div>\n  <h3 style=\"margin:0 0 12px 0; font-family:'Space Grotesk', sans-serif; font-size:20px; font-weight:700; color:#0B1210; letter-spacing:-0.01em;\">24/7 Monitored Carrier NOC</h3>\n  <p style=\"margin:0 0 22px 0; font-family:'Inter', sans-serif; font-size:14.5px; line-height:1.6; color:#53645B;\">Round-the-clock proactive monitoring by experienced telecom routing engineers ensuring 99.99% platform availability and instant route recovery.</p>\n  <div style=\"display:flex; flex-wrap:wrap; margin-top:auto; padding-top:8px;\">\n    <span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">24/7/365 NOC</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Proactive Alerts</span><span style=\"display:inline-block; font-size:11.5px; font-weight:600; color:#14692c; background:#EBF9EF; border:1px solid #C6EACF; padding:4px 10px; border-radius:999px; margin-right:6px; margin-bottom:6px;\">Direct Engineers</span>\n  </div>\n</div>"
                       },
                       "elements": []
                     }
